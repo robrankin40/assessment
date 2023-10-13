@@ -5,9 +5,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.calc-bg {
+  background-color: #181818;
+}
+
+.calc-button-pad {
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+  height: 200px;
+}
+
+.calc-button-pad-left-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.calc-single-operator-row {
+  display: flex;
+  flex: 1;
+}
+
+.calc-operator-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.calc-num-pad {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+}
+
+.calc-num-pad-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.calc-btn {
+  display: flex;
+  flex: 1;
+  margin: 0.5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.calc-btn-flex2 {
+  padding: 0 0.5px;
+}
+
+.calc-num-btn {
+  background-color: #a9a9a9;
+}
+
+.calc-single-operator-btn {
+  background-color: #3b3b3b;
+}
+
+.calc-operator-btn {
+  background-color: #fd8d0f;
 }
