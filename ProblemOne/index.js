@@ -60,7 +60,8 @@ function mutateArray(a) {
       guest_type,
       first_name,
       last_name,
-      ...guest_booking
+      room_no: guest_booking.room_no,
+      some_total: guest_booking.some_array.reduce((prev, cur) => prev + cur, 0)
     }));
 }
 
