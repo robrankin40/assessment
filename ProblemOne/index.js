@@ -62,7 +62,8 @@ function mutateArray(a) {
       last_name,
       room_no: guest_booking.room_no,
       some_total: guest_booking.some_array.reduce((prev, cur) => prev + cur, 0)
-    })).filter(({guest_type}) => guest_type === 'guest');
+    })).filter(({guest_type}) => guest_type === 'guest')
+    .sort((a, b) => `${a.last_name} ${a.first_name}` >= `${b.last_name} ${b.first_name}` ? 1 : -1);
 }
 
 $(document).ready(function() {
