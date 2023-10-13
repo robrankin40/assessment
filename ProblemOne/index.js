@@ -56,7 +56,12 @@ var arr = [
 ];
 
 function mutateArray(a) {
-    return a;
+    return a.map(({guest_type, first_name, last_name, guest_booking}) => ({
+      guest_type,
+      first_name,
+      last_name,
+      ...guest_booking
+    }));
 }
 
 $(document).ready(function() {
